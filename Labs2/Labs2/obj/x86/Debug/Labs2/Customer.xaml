@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Labs2.Labs2.Customer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Labs2.Labs2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Margin="50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:ConnectionId='2' x:Name="CustomerFrame">
+            <StackPanel Grid.Column="0" Margin="0,100,0,0">
+                <TextBlock Text="Customer" FontSize="30" Margin="0" HorizontalAlignment="Center"/>
+                <TextBox x:ConnectionId='7' x:Name="inputFullname" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Name"/>
+                <TextBox x:ConnectionId='8' x:Name="inputDate" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Date"/>
+      
+                <TextBox x:ConnectionId='9' x:Name="inputAddress" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Address"/>
+                <TextBox x:ConnectionId='10' x:Name="inputPhone" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Phone"/>
+                <Button x:ConnectionId='11'                Margin="20" Background="Beige" HorizontalAlignment="Center" Width="150" Content="Submit"/>
+                <Button x:ConnectionId='12'              Margin="20" Background="Beige" HorizontalAlignment="Center" Width="150" Content="Back"/>
+            </StackPanel>
+        </Frame>
+        <StackPanel Grid.Column="1" Margin="0,100,0,0">
+            <TextBlock x:ConnectionId='3' x:Name="txtName" Text="Name" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+            <TextBlock x:ConnectionId='4' x:Name="txtDate" Text="Email" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+            <TextBlock x:ConnectionId='5' x:Name="txtAddress" Text="Address" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+            <TextBlock x:ConnectionId='6' x:Name="txtPhone" Text="Phone" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
+

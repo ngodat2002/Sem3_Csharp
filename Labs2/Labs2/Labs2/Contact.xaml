@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Labs2.Labs2.Contact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Labs2.Labs2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="ContactFrame">
+            <StackPanel Grid.Column="0" Margin="0,100,0,0">
+                <TextBlock Text="Contact" FontSize="30" Margin="0" HorizontalAlignment="Center"/>
+                <TextBox x:Name="inputFullname" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Name"/>
+                <TextBox x:Name="inputEmail" Margin="20" HorizontalAlignment="Center" Width="250" Height="40" Text="" TextWrapping="Wrap" PlaceholderText="Email"/>
+                <TextBox x:Name="inputMessage" Margin="20" HorizontalAlignment="Center" Width="250" Height="100" Text="" TextWrapping="Wrap" PlaceholderText="Message"/>
+                <Button Click="Submit" Margin="20" Background="Beige" HorizontalAlignment="Center" Width="150" Content="Submit"/>
+                <Button Click="Back" Margin="20" Background="Beige" HorizontalAlignment="Center" Width="150" Content="Back"/>
+            </StackPanel>
+        </Frame>
+        <StackPanel Grid.Column="1" Margin="0,100,0,0">
+            <TextBlock x:Name="txtName" Text="Name" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtEmail" Text="Email" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+            <TextBlock x:Name="txtMessage" Text="Message" FontSize="20" TextWrapping="Wrap" Margin="150,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
